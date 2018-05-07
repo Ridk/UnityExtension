@@ -1,7 +1,9 @@
 package com.ridk.unityextension;
 
+import android.annotation.TargetApi;
 import android.bluetooth.le.ScanCallback;
 import android.bluetooth.le.ScanResult;
+import android.os.Build;
 import android.util.Log;
 
 import java.util.List;
@@ -10,6 +12,7 @@ import java.util.List;
  * Created by Ridk on 2018/1/25.
  */
 
+@TargetApi(Build.VERSION_CODES.LOLLIPOP)
 public class RidkScanCallback extends ScanCallback {
 
     private IScanCallback ISC;
